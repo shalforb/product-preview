@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    padding: 30px 30px;
+}
+
+.main-container {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: hsl(228, 12%, 48%);
+    margin-top: 10px;
+}
+
+.content-container {
+     padding: 0 30px;
+}
+
+.preview-image1 {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.preview-image2 {
+    display: none;
+}
+
+
+.product-description {
+    font-size: 14px;
+    line-height: 175%;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+h1, .price {
+    font-family: Fraunces, Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, .product-description, .price-container, button {
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 38px;
+    color: hsl(212, 21%, 14%);
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    color: hsl(158, 36%, 37%)
+}
+
+.rrp {
+    text-decoration: line-through;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.cart-icon {
+  margin-right: 15px;
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+@media screen and (min-width: 700px) {
+
+    body, html {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        width: 700px;
+        max-width: 90%;
+    }
+
+    .image-container, .content-container {
+        width: 50%;
+    }
+
+    .preview-image1 {
+        display: none;
+    }
+
+    .preview-image2 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+    
+}
